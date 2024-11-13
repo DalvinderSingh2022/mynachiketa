@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --text: rgb(27, 27, 27);
+    --primary: rgb(219, 176, 96);
+    --white: #fff;
+    --grey: #878787;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    border: 1px solid var(--grey);
+    outline: none;
+    padding: 8px 12px;
+}
+
+input:focus {
+    border-color: var(--primary);
+}
+
+section {
+    max-width: 920px;
+    margin: auto;
+    padding: 1em;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    text-transform: capitalize;
+    border-radius: 4px;
+}
+
+.btn.primary,
+nav a.active {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+body nav {
+    display: flex;
+    padding: 1em;
+    box-shadow: 0 0 42px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* profile */
+section .profile_form {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+}
+
+section .profile_form .input_field {
+    width: min(100%, 420px);
+}
+
+section .user_details {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0;
+    width: min(100%, 720px);
+    font-size: 1.1em;
+}
+
+.user_details .user_profileimage {
+    margin: auto;
+    width: 240px;
+}
+
+.user_details .user_rating {
+    display: flex;
+    gap: 4px;
+    font-size: 1.1em;
+}
+
+.user_rating .rating_key {
+    font-weight: 600;
+}
+
+.user_details .user_username {
+    color: var(--primary);
+    font-size: 2em;
+}
+
+.user_details .user_bio {
+    color: var(--grey);
+    font-size: 1.2em;
+}
